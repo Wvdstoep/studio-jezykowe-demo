@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>¡Hola! Studio Języka Hiszpańskiego — kursy w Warszawie i online</title>
+<meta name="description" content="Kursy hiszpańskiego dla dorosłych — indywidualnie i w małych grupach. Pierwsza lekcja gratis. Zapisz się online.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="¡Hola! Studio Języka Hiszpańskiego">
+<meta property="og:description" content="Kursy hiszpańskiego — indywidualnie i w grupach. Pierwsza lekcja gratis. Zapisy online.">
+<meta property="og:image" content="https://wvdstoep.github.io/studio-jezykowe-demo/og-image.jpg">
+<meta property="og:url" content="https://wvdstoep.github.io/studio-jezykowe-demo/">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--ink:#2b1d17;--muted:#7c6a60;--line:#efe2d8;--bg:#fffdfa;--soft:#fbf1e7;--accent:#e0592b;--accent-deep:#c2451c;--gold:#e8a53d}
+  *{box-sizing:border-box} html{scroll-behavior:smooth}
+  body{margin:0;font-family:"Nunito Sans",system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.7;-webkit-font-smoothing:antialiased}
+  h1,h2,h3{font-family:Fraunces,serif;line-height:1.1;margin:0 0 .3em;font-weight:600}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 22px}
+  .btn{display:inline-flex;align-items:center;gap:.5em;background:var(--accent);color:#fff;font-weight:700;padding:14px 26px;border-radius:999px;text-decoration:none;border:0;cursor:pointer;font-size:1rem;transition:transform .12s,background .12s}
+  .btn:hover{background:var(--accent-deep);transform:translateY(-1px)}
+  .btn.ghost{background:transparent;color:var(--ink);border:1.5px solid var(--line)}
+  .demo-note{background:#f6e7d6;color:#8a5a2e;font-size:.82rem;text-align:center;padding:7px 12px}
+  header{position:sticky;top:0;z-index:20;background:rgba(255,253,250,.9);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  nav{display:flex;align-items:center;justify-content:space-between;height:68px}
+  .logo{font-family:Fraunces;font-weight:700;font-size:1.35rem}.logo b{color:var(--accent)}
+  .navlinks{display:flex;gap:26px;align-items:center}
+  .navlinks a{text-decoration:none;color:var(--muted);font-weight:600;font-size:.95rem}
+  .navlinks a:hover{color:var(--ink)}
+  @media(max-width:720px){.navlinks a:not(.btn){display:none}}
+  .hero{padding:80px 0 64px;background:radial-gradient(800px 360px at 75% -10%,#fdeede 0,transparent 60%)}
+  .hero .eyebrow{color:var(--accent-deep);font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:.76rem;margin-bottom:14px}
+  .hero h1{font-size:clamp(2.4rem,6vw,4rem);max-width:16ch}
+  .hero p{font-size:1.2rem;color:var(--muted);max-width:50ch;margin:18px 0 28px}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+  .trust{margin-top:24px;color:var(--muted);font-size:.92rem}.stars{color:var(--gold);letter-spacing:2px}
+  section{padding:64px 0}
+  .kicker{color:var(--accent-deep);font-weight:700;letter-spacing:.12em;text-transform:uppercase;font-size:.74rem}
+  h2{font-size:clamp(1.8rem,4vw,2.6rem)}
+  .lead{color:var(--muted);max-width:54ch;font-size:1.05rem}
+  .grid{display:grid;gap:18px;margin-top:32px}.g3{grid-template-columns:repeat(3,1fr)}
+  @media(max-width:760px){.g3{grid-template-columns:1fr}}
+  .card{border:1px solid var(--line);border-radius:18px;padding:26px;background:#fff}
+  .card h3{font-size:1.2rem}
+  .price{background:var(--soft)}.price .amt{font-family:Fraunces;font-weight:700;font-size:2.1rem;margin:.15em 0}
+  .price .amt small{font-size:.85rem;color:var(--muted);font-weight:600}
+  .price ul{list-style:none;padding:0;margin:14px 0 20px}.price li{padding:6px 0 6px 24px;position:relative;color:#4a3a32}
+  .price li::before{content:"✓";position:absolute;left:0;color:var(--accent);font-weight:800}
+  .featured{border:2px solid var(--accent);position:relative}
+  .featured .tag{position:absolute;top:-13px;left:24px;background:var(--accent);color:#fff;font-size:.7rem;font-weight:800;padding:5px 12px;border-radius:999px;letter-spacing:.05em}
+  .about{background:var(--soft);border-radius:24px;padding:44px;display:grid;grid-template-columns:1fr 1.2fr;gap:34px;align-items:center}
+  @media(max-width:760px){.about{grid-template-columns:1fr;padding:28px}}
+  .portrait{aspect-ratio:1/1;border-radius:18px;background:linear-gradient(150deg,#f4c98a,#e0592b);display:flex;align-items:flex-end;padding:18px;color:#fff;font-family:Fraunces;font-weight:700}
+  .quote{border-left:3px solid var(--accent);padding:4px 0 4px 18px;margin:0;font-size:1.02rem}
+  .who{margin-top:10px;color:var(--muted);font-size:.88rem}
+  .book{background:var(--ink);color:#fff;border-radius:24px;padding:44px;display:grid;grid-template-columns:1fr 1fr;gap:34px}
+  @media(max-width:760px){.book{grid-template-columns:1fr;padding:26px}}
+  .book h2{color:#fff}.book p{color:#c9b8ad}
+  form{display:grid;gap:12px}label{font-size:.85rem;color:#d8cabf;font-weight:600}
+  input,select{width:100%;padding:12px 14px;border-radius:12px;border:1px solid #4a3b34;background:#37271f;color:#fff;font:inherit}
+  input:focus,select:focus{outline:2px solid var(--accent);border-color:transparent}
+  .ok{display:none;background:#2f3a20;border:1px solid #5c7a34;color:#cdeb9a;padding:14px;border-radius:12px;font-weight:600}
+  footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);font-size:.9rem;text-align:center}
+</style>
+</head>
+<body>
+<div class="demo-note">Demo — przykład strony zbudowanej dla klienta. Twoja marka, Twoje kolory, Twoja domena.</div>
+<header><div class="wrap"><nav>
+  <div class="logo">¡Hola!<b>·</b>Studio</div>
+  <div class="navlinks"><a href="#oferta">Oferta</a><a href="#cennik">Cennik</a><a href="#o-mnie">O mnie</a><a href="#kontakt" class="btn">Pierwsza lekcja gratis</a></div>
+</nav></div></header>
+
+<section class="hero"><div class="wrap">
+  <div class="eyebrow">Hiszpański · Warszawa + online</div>
+  <h1>Mów po hiszpańsku — bez stresu.</h1>
+  <p>Kursy dopasowane do Ciebie: indywidualnie albo w małej grupie, z lektorem, który słucha zanim zacznie mówić. Pierwsza lekcja jest ode mnie.</p>
+  <div class="cta-row"><a href="#kontakt" class="btn">Zapisz się na darmową lekcję</a><a href="#cennik" class="btn ghost">Zobacz cennik</a></div>
+  <div class="trust"><span class="stars">★★★★★</span> Ocena 5,0 od ponad 90 kursantów</div>
+</div></section>
+
+<section id="oferta"><div class="wrap">
+  <div class="kicker">Oferta</div><h2>Nauka, która pasuje do Twojego życia</h2>
+  <p class="lead">Wybierz formę, która Ci odpowiada — wszystko układam pod Twój poziom i cel już od pierwszej lekcji.</p>
+  <div class="grid g3">
+    <div class="card"><h3>Lekcje indywidualne</h3><p>Tylko Ty i lektor — tempo i program w 100% pod Ciebie, stacjonarnie lub online.</p></div>
+    <div class="card"><h3>Małe grupy</h3><p>2–5 osób, niższa cena, więcej rozmowy i motywacji w miłej atmosferze.</p></div>
+    <div class="card"><h3>Hiszpański w podróży</h3><p>Praktyczny kurs „przetrwania" przed wyjazdem — w kilka tygodni.</p></div>
+  </div>
+</div></section>
+
+<section id="cennik" style="background:var(--soft)"><div class="wrap">
+  <div class="kicker">Cennik</div><h2>Proste, uczciwe ceny</h2>
+  <div class="grid g3">
+    <div class="card price"><h3>Online</h3><div class="amt">80 zł<small>/lekcja</small></div><ul><li>Lekcje 1-na-1 przez wideo</li><li>Materiały w cenie</li><li>Elastyczne terminy</li></ul><a href="#kontakt" class="btn ghost">Zacznij online</a></div>
+    <div class="card price featured"><span class="tag">NAJPOPULARNIEJSZE</span><h3>Indywidualnie</h3><div class="amt">100 zł<small>/lekcja</small></div><ul><li>Stacjonarnie w Warszawie</li><li>Program pod Twój cel</li><li>Pierwsza lekcja gratis</li></ul><a href="#kontakt" class="btn">Umów darmową lekcję</a></div>
+    <div class="card price"><h3>Mała grupa</h3><div class="amt">55 zł<small>/lekcja</small></div><ul><li>2–5 osób</li><li>Więcej rozmowy</li><li>Stały grafik</li></ul><a href="#kontakt" class="btn ghost">Dołącz do grupy</a></div>
+  </div>
+</div></section>
+
+<section id="o-mnie"><div class="wrap"><div class="about">
+  <div class="portrait">Marta Ríos<br>Lektorka hiszpańskiego</div>
+  <div>
+    <div class="kicker">O mnie</div><h2>Cześć, jestem Marta.</h2>
+    <p class="lead" style="margin:0">Uczę hiszpańskiego od 8 lat — zwykłych ludzi, nie tłumaczy. Wierzę, że języka uczysz się mówiąc od pierwszej lekcji, a nie wkuwając tabelki. Ułożę plan, który będzie Cię cieszył.</p>
+  </div>
+</div></div></section>
+
+<section><div class="wrap">
+  <div class="kicker">Opinie</div><h2>Co mówią kursanci</h2>
+  <div class="grid g3">
+    <div class="card"><blockquote class="quote">Po trzech miesiącach dogadałam się na wakacjach w Hiszpanii. Marta jest cierpliwa i konkretna.</blockquote><div class="who">— Ola K.</div></div>
+    <div class="card"><blockquote class="quote">Zajęcia online idealnie wpasowały się między pracę a dzieci. Pierwszy lektor, przy którym wytrwałem.</blockquote><div class="who">— Tomek W.</div></div>
+    <div class="card"><blockquote class="quote">Zero nudy, dużo mówienia od początku. Polecam każdemu, kto boi się mówić.</blockquote><div class="who">— Daniel R.</div></div>
+  </div>
+</div></section>
+
+<section id="kontakt"><div class="wrap"><div class="book">
+  <div>
+    <div class="kicker" style="color:var(--gold)">Pierwsza lekcja gratis</div><h2>Zapisz się w 30 sekund</h2>
+    <p>Napisz, jaki masz cel i kiedy Ci pasuje — odpiszę tego samego dnia i umówimy darmową lekcję. Bez karty, bez zobowiązań.</p>
+    <p style="margin-top:16px;color:#a9968b;font-size:.9rem">Wolisz napisać? WhatsApp / Instagram — linki w stopce.</p>
+  </div>
+  <div>
+    <form id="bf" onsubmit="event.preventDefault();this.style.display='none';document.getElementById('done').style.display='block';">
+      <div><label>Imię</label><input required placeholder="Twoje imię"></div>
+      <div><label>E-mail lub telefon</label><input required placeholder="Żebym mogła potwierdzić"></div>
+      <div><label>Cel</label><select><option>Od zera</option><option>Konwersacje</option><option>Do pracy</option><option>Przed podróżą</option><option>Do egzaminu</option></select></div>
+      <div><label>Kiedy Ci pasuje?</label><input placeholder="np. wieczory w tygodniu"></div>
+      <button class="btn" type="submit" style="width:100%;justify-content:center;margin-top:6px">Rezerwuję darmową lekcję</button>
+    </form>
+    <div class="ok" id="done">✓ Dziękuję! Zgłoszenie przyjęte — odezwę się jeszcze dziś. <br><small style="color:#cdeb9a">(Formularz demonstracyjny — na żywej stronie wysyła e-mail od razu.)</small></div>
+  </div>
+</div></div></section>
+
+<footer><div class="wrap">¡Hola! Studio Języka Hiszpańskiego · Warszawa · hola@studio.example · Instagram · WhatsApp</div></footer>
+</body>
+</html>
